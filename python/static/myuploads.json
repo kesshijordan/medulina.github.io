@@ -185,14 +185,6 @@
     },
     {
         "Nvox_threshold": "100",
-        "image_filename": "",
-        "mask_filename": "",
-        "patient_id": "",
-        "slice_direction": "ax",
-        "task_type": ""
-    },
-    {
-        "Nvox_threshold": "100",
         "image_filename": "case_001_2.nii.gz",
         "mask_filename": "roi_fixed.nii.gz",
         "patient_id": "pt11",
@@ -321,30 +313,6 @@
     },
     {
         "Nvox_threshold": "100",
-        "image_filename": "",
-        "mask_filename": "",
-        "patient_id": "",
-        "slice_direction": "ax",
-        "task_type": ""
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "",
-        "mask_filename": "",
-        "patient_id": "anisha",
-        "slice_direction": "ax",
-        "task_type": "stroke"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "",
-        "mask_filename": "",
-        "patient_id": "anisha",
-        "slice_direction": "ax",
-        "task_type": "stroke"
-    },
-    {
-        "Nvox_threshold": "100",
         "image_filename": "case_001_2.nii.gz",
         "mask_filename": "roi_fixed.nii.gz",
         "patient_id": "anisha",
@@ -356,14 +324,6 @@
         "image_filename": "case_001_2.nii.gz",
         "mask_filename": "roi_fixed.nii.gz",
         "patient_id": "anisha",
-        "slice_direction": "ax",
-        "task_type": "stroke"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "",
-        "mask_filename": "",
-        "patient_id": "kesshi",
         "slice_direction": "ax",
         "task_type": "stroke"
     },
@@ -779,144 +739,8 @@
         "Nvox_threshold": "100",
         "image_filename": "case_001_2.nii.gz",
         "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "pt22",
-        "slice_direction": "ax",
-        "task_type": "stroke"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "pt22",
-        "slice_direction": "ax",
-        "task_type": "stroke"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "patient44",
-        "slice_direction": "ax",
-        "task_type": "tumor"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
         "patient_id": "pt33",
         "slice_direction": "ax",
-        "task_type": "tumor"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "pt33",
-        "slice_direction": "ax",
-        "task_type": "tumor"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "uhoh",
-        "slice_direction": "ax",
         "task_type": "stroke"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "uhoh",
-        "slice_direction": "ax",
-        "task_type": "stroke"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "sdf",
-        "slice_direction": "ax",
-        "task_type": "dsfd"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "asdf",
-        "slice_direction": "ax",
-        "task_type": "asdfasdf"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "asdf",
-        "slice_direction": "ax",
-        "task_type": "asdfasdf"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "asdf",
-        "slice_direction": "ax",
-        "task_type": "asdfasdf"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "asdf",
-        "slice_direction": "ax",
-        "task_type": "asdfasdf"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "ff",
-        "slice_direction": "ax",
-        "task_type": "asdf"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "asasdfsadf",
-        "slice_direction": "ax",
-        "task_type": "fdsa"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "fasd",
-        "slice_direction": "ax",
-        "task_type": "dsafasdf"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "fasd",
-        "slice_direction": "ax",
-        "task_type": "dsafasdf"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "fasd",
-        "slice_direction": "ax",
-        "task_type": "dsafasdf"
-    },
-    {
-        "Nvox_threshold": "100",
-        "image_filename": "case_001_2.nii.gz",
-        "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "fasd",
-        "slice_direction": "ax",
-        "task_type": "dsafasdf"
     }
 ]
