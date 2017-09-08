@@ -36,10 +36,10 @@ def upload_function():
       fname_mask = os.path.basename(secure_filename(f_mask.filename))
 
       #Make the json entry
-      myuploads['_'.join([task_type,ptid])] = {'patient_id':ptid,'mask_filename':secure_filename(f_mask.filename), \
+      myuploads.append({'patient_id':ptid,'mask_filename':secure_filename(f_mask.filename), \
       'image_filename':secure_filename(f_image.filename), \
       'Nvox_threshold':min_Nvox, 'task_type':task_type, \
-      'slice_direction':slice_direction}
+      'slice_direction':slice_direction})
 
       #Save images in upload directory
       image_savepath = upload_putpath+ptid+'_image.nii.gz'

@@ -23,6 +23,7 @@ Vue.component('demo-grid', {
       var filterKey = this.filterKey && this.filterKey.toLowerCase()
       var order = this.sortOrders[sortKey] || 1
       var data = this.data
+      console.log("data is", data)
       if (filterKey) {
         data = data.filter(function (row) {
           return Object.keys(row).some(function (key) {
@@ -72,9 +73,15 @@ var demo = new Vue({
 /*
 var myjson = $.getJSON( "uploaded_files/myuploads.json", function() {
   console.log( "success" );})*/
-var myjson = $.getJSON( "static/myuploads.json", function(data) {
-    console.log( "success" );
-    demo.gridData = data
+
+
+var myjson = $.getJSON( "static/myuploads.json", function(mydata) {
+    console.log( "success", mydata );
+    demo.gridData = mydata
+    demo.gridColumns = Object.keys(mydata[0])
+    console.log("my keys:")
+    console.log(demo.gridColumns)
+    //return mydata
   })
     .done(function() {
       console.log( "second success" );
@@ -87,17 +94,17 @@ var myjson = $.getJSON( "static/myuploads.json", function(data) {
       console.log( "complete" );
     });
 
+console.log("middle okay")
+console.log(demo)
+
 var demo = new Vue({
   el: '#demo',
   data: {
     searchQuery: '',
-    gridColumns: ['patient_id', 'task_type', 'Nvox_thr', 'slice_direction', 'mask_filename', 'image_filename'],
-    gridData: [
-      { patient_id: 'pt0001', task_type: 'tumor' , Nvox_thr:'100', slice_direction:'cor', mask_filename:'mask_filename.nii.gz', image_filename:'image_filename.nii.gz'},
-      { patient_id: 'pt0004', task_type: 'tumor' , Nvox_thr:'1000', slice_direction:'cor', mask_filename:'mask_filename.nii.gz', image_filename:'image_filename.nii.gz'},
-      { patient_id: 'pt0005', task_type: 'stroke', Nvox_thr: '200', slice_direction:'cor', mask_filename:'mask_filename.nii.gz', image_filename:'image_filename.nii.gz'},
-      { patient_id: 'pt0002', task_type: 'hippocampus', Nvox_thr: '100', slice_direction:'ax', mask_filename:'mask_filename.nii.gz', image_filename:'image_filename.nii.gz'},
-      { patient_id: 'pt0003', task_type: 'stroke', Nvox_thr: '300', slice_direction:'ax', mask_filename:'mask_filename.nii.gz', image_filename:'image_filename.nii.gz'}
-    ]
+    gridColumns: [],
+    gridData: []
   }
 })
+
+console.log("ending okay")
+console.log(demo)
