@@ -38,5 +38,29 @@
         "patient_id": "pt05",
         "slice_direction": "cor",
         "task_type": "tumor"
+    },
+    {
+        "Nvox_threshold": "150",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "anisha",
+        "slice_direction": "sag",
+        "task_type": "stroke"
+    },
+    {
+        "Nvox_threshold": "20",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "dylan",
+        "slice_direction": "sag",
+        "task_type": "dentate_gyrus"
+    },
+    {
+        "Nvox_threshold": "10",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "alberto",
+        "slice_direction": "ax",
+        "task_type": "hippocampus"
     }
 ]

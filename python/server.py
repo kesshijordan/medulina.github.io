@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, current_app
 from werkzeug import secure_filename
 import os
 from generate_tiles import create_tiles, save_json_pretty
+from nipype.utils.filemanip import load_json
 
 
 app = Flask(__name__)

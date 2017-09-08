@@ -78,10 +78,9 @@ var myjson = $.getJSON( "uploaded_files/myuploads.json", function() {
 var myjson = $.getJSON( "static/myuploads.json", function(mydata) {
     console.log( "success", mydata );
     demo.gridData = mydata
-    demo.gridColumns = Object.keys(mydata[0])
+    demo.gridColumns = Object.keys(mydata[0]).reverse()
     console.log("my keys:")
     console.log(demo.gridColumns)
-    //return mydata
   })
     .done(function() {
       console.log( "second success" );
