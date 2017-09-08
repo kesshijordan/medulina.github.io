@@ -11,9 +11,9 @@
         "Nvox_threshold": "100",
         "image_filename": "case_001_2.nii.gz",
         "mask_filename": "roi_fixed.nii.gz",
-        "patient_id": "kesshi2",
+        "patient_id": "kesshi",
         "slice_direction": "ax",
-        "task_type": "test2"
+        "task_type": "tumor"
     },
     {
         "Nvox_threshold": "100",
@@ -62,5 +62,21 @@
         "patient_id": "alberto",
         "slice_direction": "ax",
         "task_type": "hippocampus"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "satra",
+        "slice_direction": "ax",
+        "task_type": "hippocampus"
+    },
+    {
+        "Nvox_threshold": "20",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "ariel",
+        "slice_direction": "ax",
+        "task_type": "dentate_gyrus"
     }
 ]
