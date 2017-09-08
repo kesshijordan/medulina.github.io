@@ -1,8 +1,9 @@
-from flask import Flask, render_template, request, current_app, send_file
+from flask import Flask, render_template, request, current_app, send_file, make_response, render_template_string
 from werkzeug import secure_filename
 import os
 from generate_tiles import create_tiles, save_json_pretty
 from nipype.utils.filemanip import load_json
+import base64
 
 
 app = Flask(__name__)
@@ -62,18 +63,24 @@ def upload_function():
 
       sliceNlist = [int(b.split('_')[-1].split('.')[0]) for b in tilelist]
       sliceNlist.sort()
-      center_slice = ('%s_%s.png' % (slice_direction, str(sliceNlist[int(len(sliceNlist)/2)])))
-      print("WHEEEEEE")
-      print(center_slice)
-      checktile_path = os.path.join(tilepath, center_slice)
+      sorted_tlist = [('%s_%s.png' % (slice_direction, str(n))) for n in sliceNlist]
+      sorted_tplist = [os.path.join(tilepath, j) for j in sorted_tlist]
+
 
       print(tilepathlist)
 
       app.add_url_rule('/'+tilepath, endpoint='css', view_func=app.send_static_file)
 
 
+      mylist = []
+      for item in sorted_tplist:
+          with open(item, 'rb') as image_file:
+              encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
+          mylist.append(encoded_string)
+
+
       if len(fname_image) > 0 and len(fname_mask) >0:
-          return send_file(checktile_path, mimetype='image/png')
+          return render_template("image.html", **{"example": mylist})
       else:
           return "UHOH: please upload a valid file"
 
