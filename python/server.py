@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, current_app
+from flask import Flask, render_template, request, current_app, send_file
 from werkzeug import secure_filename
 import os
 from generate_tiles import create_tiles, save_json_pretty
@@ -55,9 +55,25 @@ def upload_function():
                    os.path.join('tile_files', ptid, slice_direction),
                    int(min_Nvox), 1, False, None)
 
+      tilepath = os.path.join('tile_files', ptid, slice_direction)
+      tilelist = os.listdir(tilepath)
+      tilelist = [x for x in tilelist if '.png' in x]
+      tilepathlist = [os.path.join(tilepath, j) for j in tilelist]
+
+      sliceNlist = [int(b.split('_')[-1].split('.')[0]) for b in tilelist]
+      sliceNlist.sort()
+      center_slice = ('%s_%s.png' % (slice_direction, str(sliceNlist[int(len(sliceNlist)/2)])))
+      print("WHEEEEEE")
+      print(center_slice)
+      checktile_path = os.path.join(tilepath, center_slice)
+
+      print(tilepathlist)
+
+      app.add_url_rule('/'+tilepath, endpoint='css', view_func=app.send_static_file)
+
 
       if len(fname_image) > 0 and len(fname_mask) >0:
-          return 'congratulations... you uploaded a dataset'
+          return send_file(checktile_path, mimetype='image/png')
       else:
           return "UHOH: please upload a valid file"
 

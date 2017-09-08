@@ -142,5 +142,165 @@
         "patient_id": "pt06",
         "slice_direction": "ax",
         "task_type": "dentate_gyrus"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt07",
+        "slice_direction": "sag",
+        "task_type": "tumor"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "jb",
+        "slice_direction": "ax",
+        "task_type": "stroke"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "jb",
+        "slice_direction": "ax",
+        "task_type": "stroke"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "josh",
+        "slice_direction": "ax",
+        "task_type": "tumor"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt100",
+        "slice_direction": "ax",
+        "task_type": "dentate_gyrus"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "",
+        "mask_filename": "",
+        "patient_id": "",
+        "slice_direction": "ax",
+        "task_type": ""
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt11",
+        "slice_direction": "ax",
+        "task_type": "dentate_gyrus"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt11",
+        "slice_direction": "ax",
+        "task_type": "dentate_gyrus"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt11",
+        "slice_direction": "ax",
+        "task_type": "dentate_gyrus"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt11",
+        "slice_direction": "ax",
+        "task_type": "dentate_gyrus"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt11",
+        "slice_direction": "ax",
+        "task_type": "dentate_gyrus"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt11",
+        "slice_direction": "ax",
+        "task_type": "dentate_gyrus"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt11",
+        "slice_direction": "ax",
+        "task_type": "dentate_gyrus"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt11",
+        "slice_direction": "ax",
+        "task_type": "dentate_gyrus"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt11",
+        "slice_direction": "ax",
+        "task_type": "dentate_gyrus"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "testing",
+        "slice_direction": "ax",
+        "task_type": "tumor"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "testing",
+        "slice_direction": "ax",
+        "task_type": "tumor"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "testing",
+        "slice_direction": "ax",
+        "task_type": "tumor"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "testing",
+        "slice_direction": "ax",
+        "task_type": "tumor"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt22",
+        "slice_direction": "ax",
+        "task_type": "stroke"
     }
 ]
