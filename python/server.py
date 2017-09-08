@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, current_app
 from werkzeug import secure_filename
 import os
 from generate_tiles import create_tiles, save_json_pretty
-from nipype.utils.filemanip import load_json
+
 
 app = Flask(__name__)
 # Got from https://www.tutorialspoint.com/flask/flask_file_uploading.htm
@@ -23,7 +23,7 @@ def upload_function():
       if os.path.exists(json_path):
           myuploads = load_json(json_path)
       else:
-          myuploads = {}
+          myuploads = []
 
       f_image = request.files['image_file']
       f_mask = request.files['mask_file']
