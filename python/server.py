@@ -18,7 +18,7 @@ def upload_function():
       upload_putpath = 'uploaded_files/'
       if not os.path.exists(upload_putpath):
           os.makedirs(upload_putpath)
-      json_path = os.path.join(upload_putpath, 'myuploads.json')
+      json_path = 'static/myuploads.json'
 
       if os.path.exists(json_path):
           myuploads = load_json(json_path)
@@ -47,7 +47,7 @@ def upload_function():
       f_image.save(image_savepath)
       f_mask.save(mask_savepath)
 
-      save_json_pretty(os.path.join(upload_putpath,'myuploads.json'), myuploads)
+      save_json_pretty(json_path, myuploads)
 
       #create tiles from the nifti image and save in tile directory
       create_tiles(image_savepath, mask_savepath, slice_direction,

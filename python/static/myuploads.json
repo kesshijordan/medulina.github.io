@@ -1,0 +1,42 @@
+{
+    "stroke_pt03": {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt03",
+        "slice_direction": "cor",
+        "task_type": "stroke"
+    },
+    "test2_kesshi2": {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "kesshi2",
+        "slice_direction": "ax",
+        "task_type": "test2"
+    },
+    "tumor_pt01": {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt01",
+        "slice_direction": "ax",
+        "task_type": "tumor"
+    },
+    "tumor_pt02": {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt02",
+        "slice_direction": "ax",
+        "task_type": "tumor"
+    },
+    "tumor_pt05": {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt05",
+        "slice_direction": "cor",
+        "task_type": "tumor"
+    }
+}

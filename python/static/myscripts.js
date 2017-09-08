@@ -53,22 +53,7 @@ Vue.component('demo-grid', {
   }
 })
 /*
-// bootstrap the demo
-var demo = new Vue({
-  el: '#demo',
-  data: {
-    searchQuery: '',
-    gridColumns: ['name', 'power', 'oak'],
-    gridData: [
-      { name: 'Chuck Norris', power: Infinity , oak:'cake'},
-      { name: 'Bruce Lee', power: 9000 , oak:'fudge'},
-      { name: 'Jackie Chan', power: 7000, oak: 'tree'},
-      { name: 'Jet Li', power: 8000, oak: 'apple' },
-      { name: 'Kesshi', power: 120, oak: 'mango' }
-    ]
-  }
-})*/
-
+https://vuejs.org/v2/examples/grid-component.html
 var demo = new Vue({
   el: '#demo',
   data: {
@@ -80,6 +65,39 @@ var demo = new Vue({
       { patient_id: 'pt0005', task_type: 'stroke', Nvox_thr: 200, slice_direction:'cor', mask_filename:'mask_filename.nii.gz', image_filename:'image_filename.nii.gz'},
       { patient_id: 'pt0002', task_type: 'hippocampus', Nvox_thr: 100, slice_direction:'ax', mask_filename:'mask_filename.nii.gz', image_filename:'image_filename.nii.gz'},
       { patient_id: 'pt0003', task_type: 'stroke', Nvox_thr: 300, slice_direction:'ax', mask_filename:'mask_filename.nii.gz', image_filename:'image_filename.nii.gz'}
+    ]
+  }
+})
+*/
+/*
+var myjson = $.getJSON( "uploaded_files/myuploads.json", function() {
+  console.log( "success" );})*/
+var myjson = $.getJSON( "static/myuploads.json", function(data) {
+    console.log( "success" );
+    demo.gridData = data
+  })
+    .done(function() {
+      console.log( "second success" );
+      console.log(myjson.responseJSON);
+    })
+    .fail(function() {
+      console.log( "error" );
+    })
+    .always(function() {
+      console.log( "complete" );
+    });
+
+var demo = new Vue({
+  el: '#demo',
+  data: {
+    searchQuery: '',
+    gridColumns: ['patient_id', 'task_type', 'Nvox_thr', 'slice_direction', 'mask_filename', 'image_filename'],
+    gridData: [
+      { patient_id: 'pt0001', task_type: 'tumor' , Nvox_thr:'100', slice_direction:'cor', mask_filename:'mask_filename.nii.gz', image_filename:'image_filename.nii.gz'},
+      { patient_id: 'pt0004', task_type: 'tumor' , Nvox_thr:'1000', slice_direction:'cor', mask_filename:'mask_filename.nii.gz', image_filename:'image_filename.nii.gz'},
+      { patient_id: 'pt0005', task_type: 'stroke', Nvox_thr: '200', slice_direction:'cor', mask_filename:'mask_filename.nii.gz', image_filename:'image_filename.nii.gz'},
+      { patient_id: 'pt0002', task_type: 'hippocampus', Nvox_thr: '100', slice_direction:'ax', mask_filename:'mask_filename.nii.gz', image_filename:'image_filename.nii.gz'},
+      { patient_id: 'pt0003', task_type: 'stroke', Nvox_thr: '300', slice_direction:'ax', mask_filename:'mask_filename.nii.gz', image_filename:'image_filename.nii.gz'}
     ]
   }
 })
