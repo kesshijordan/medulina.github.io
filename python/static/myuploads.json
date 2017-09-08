@@ -78,5 +78,69 @@
         "patient_id": "ariel",
         "slice_direction": "ax",
         "task_type": "dentate_gyrus"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "aki",
+        "slice_direction": "sag",
+        "task_type": "hippocampus"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "tal",
+        "slice_direction": "sag",
+        "task_type": "tumor"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "tal",
+        "slice_direction": "sag",
+        "task_type": "tumor"
+    },
+    {
+        "Nvox_threshold": "20",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "chris",
+        "slice_direction": "ax",
+        "task_type": "hippocampus"
+    },
+    {
+        "Nvox_threshold": "20",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt04",
+        "slice_direction": "ax",
+        "task_type": "dentate_gyrus"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "dan",
+        "slice_direction": "ax",
+        "task_type": "stroke"
+    },
+    {
+        "Nvox_threshold": "100",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt05",
+        "slice_direction": "ax",
+        "task_type": "stroke"
+    },
+    {
+        "Nvox_threshold": "10",
+        "image_filename": "case_001_2.nii.gz",
+        "mask_filename": "roi_fixed.nii.gz",
+        "patient_id": "pt06",
+        "slice_direction": "ax",
+        "task_type": "dentate_gyrus"
     }
 ]

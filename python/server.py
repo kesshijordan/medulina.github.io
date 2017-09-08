@@ -57,7 +57,7 @@ def upload_function():
 
 
       if len(fname_image) > 0 and len(fname_mask) >0:
-          return 'file uploaded'
+          return 'congratulations... you uploaded a dataset'
       else:
           return "UHOH: please upload a valid file"
 
